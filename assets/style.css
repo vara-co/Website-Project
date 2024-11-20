@@ -1,1 +1,23 @@
-/* Style Pending */
+/* Style */
+
+/* Main page */
+body {
+    background: rgb(47, 85, 72);
+    background: linear-gradient(0deg, rgb(4, 190, 122) 0%, rgb(75, 25, 88) 100%);
+    margin: 50px ;
+    color: #fff;
+}
+
+
+/* Main Font Families */
+#mainheader {
+    font-family:'Courier New', Courier, monospace
+}
+
+.subheadings {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.paragraphcontent{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
