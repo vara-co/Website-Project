@@ -14,6 +14,46 @@ body {
     font-family:'Courier New', Courier, monospace
 }
 
+/* Typing animation for the text - Work in Progress - */
+/* Adding the animation to the correct ID to create the typing effect */
+/* Typing animation for the text - Work in Progress - */
+#mainheaderWIP {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;  /* Ensures text and cursor are inline */
+    overflow: hidden;       /* Hides content during typing animation */
+    white-space: nowrap;    /* Prevents text wrapping */
+    width: 0;               /* Start with no width for typing effect */
+    border-right: 2px solid rgb(245, 239, 239); /* Cursor as part of the typing effect */
+    animation: typing 4s steps(18, end) infinite, blinking 1s step-end infinite;    border-right: 2px solid rgb(245, 239, 239); /* Cursor as part of the typing effect */
+
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    90% {
+        width: 17ch; /* Full text appears */
+    }
+    100% {
+        width: 17ch; /* Pause here */
+    }
+}
+
+
+/* Blinking cursor animation */
+@keyframes blinking {
+    0%, 100% {
+        border-color: transparent; /* Cursor hidden */
+    }
+    50% {
+        border-color: rgb(255, 254, 255); /* Cursor visible */
+    }
+}
+
+
+
 .subheadings {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
