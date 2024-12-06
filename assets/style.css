@@ -11,7 +11,14 @@ body {
 
 /* Main Font Families */
 #mainheader {
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    display: inline-block;
+    overflow: hidden;
+    white-space: wrap;
+    font-size: 50px;
+    
+    animation-name: scaleIn;
+    animation-duration: 2s;
 }
 
 /* Typing animation for the text - Work in Progress - */
@@ -27,6 +34,14 @@ body {
     animation: typing 4s steps(18, end) infinite, blinking 1s step-end infinite;    border-right: 2px solid rgb(245, 239, 239); /* Cursor as part of the typing effect */
 
 }
+
+
+@keyframes scaleIn {
+    0% {transform: scale(0.2);}
+    85% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
 
 /* Typing animation keyframes */
 @keyframes typing {
